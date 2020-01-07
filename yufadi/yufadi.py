@@ -3,7 +3,8 @@
 # -*- coding: utf8 -*-
 
 
-from yufadi import word_seg, gec
+from yufadi import word_seg
+from yufadi import gec
 
 
 class Yufadi:

@@ -1,1 +1,2 @@
 jieba>=0.40
+synonyms>=3.10
