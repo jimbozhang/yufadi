@@ -31,5 +31,5 @@ class Yufadi:
     def run_mode_t2t_client(self, sentence):
         return sentence
 
-    def run(self, sentence):
+    def __call__(self, sentence):
         return self.run_functions[self.mode](sentence)

@@ -9,10 +9,14 @@ def run_main(v):
     model_path = sys.argv[1]
     input_fn = sys.argv[2]
 
-    engine = yufadi.Yufadi(mode, model_path)
+    processor = yufadi.Yufadi(mode, model_path)
     with open(input_fn) as f:
         for line in f:
-            print(engine.run(line.strip()))
+            line = line.strip('\n')
+            result = processor(line)
+            line = line.replace(' ', '')
+            result = result.replace(' ', '')
+            print('{} ---> {}'.format(line, result))
 
 
 if __name__ == "__main__":
