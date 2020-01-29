@@ -5,18 +5,20 @@ import sys
 from yufadi import yufadi
 
 
-def run_one_sentence(sentence):
-    return sentence + '\t' + yufadi.run(sentence)
+def run_main(v):
+    model_path = sys.argv[1]
+    input_fn = sys.argv[2]
 
-
-def run_main():
-    input_fn = sys.argv[1]
-
-    engine = yufadi.Yufadi()
+    processor = yufadi.Yufadi(mode, model_path)
     with open(input_fn) as f:
         for line in f:
-            print(engine.run(line.strip()))
+            line = line.strip('\n')
+            result = processor(line)
+            line = line.replace(' ', '')
+            result = result.replace(' ', '')
+            print('{} ---> {}'.format(line, result))
 
 
 if __name__ == "__main__":
-    run_main()
+    mode = 't2t-local'
+    run_main(mode)
