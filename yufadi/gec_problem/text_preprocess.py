@@ -48,6 +48,7 @@ class SentencePreprocess:
 
     def __call__(self, *args, **kwargs):
         sen = args[0]
+        sen = sen.strip('\n')
         return self.oov2unk(sen)
 
 

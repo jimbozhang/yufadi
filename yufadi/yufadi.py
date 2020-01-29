@@ -25,7 +25,7 @@ class Yufadi:
 
     def run_mode_t2t_local(self, sentence):
         sentence = self.text_preprocessor(sentence)
-        return self.predictor(sentence)
+        return self.predictor(sentence).replace(' ', '')
 
     @staticmethod
     def run_mode_t2t_client(self, sentence):

@@ -12,11 +12,8 @@ def run_main(v):
     processor = yufadi.Yufadi(mode, model_path)
     with open(input_fn) as f:
         for line in f:
-            line = line.strip('\n')
             result = processor(line)
-            line = line.replace(' ', '')
-            result = result.replace(' ', '')
-            print('{} ---> {}'.format(line, result))
+            print('{} ---> {}'.format(line.strip('\n'), result))
 
 
 if __name__ == "__main__":
