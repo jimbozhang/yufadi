@@ -40,6 +40,8 @@ class SentencePreprocess:
         words_processed = []
         for w in words:
             if w not in self.id_of_word:
+                if len(words_processed) == 0:
+                    continue
                 if words_processed[-1] != self.unk_sym:
                     words_processed.append(self.unk_sym)
             else:

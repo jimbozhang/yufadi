@@ -1,3 +1,4 @@
+wtforms
 numpy
 tensor2tensor
 tensorflow==1.14

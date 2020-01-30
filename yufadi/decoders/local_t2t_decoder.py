@@ -48,4 +48,7 @@ class LocalT2tDecoder:
         return self.encoders["inputs"].decode(np.squeeze(integers))
 
     def __call__(self, sentence):
-        return self.translate(sentence)
+        if sentence == '':
+            return ''
+        else:
+            return self.translate(sentence)
