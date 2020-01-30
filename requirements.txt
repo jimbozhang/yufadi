@@ -1,5 +1,4 @@
-jieba>=0.40
-synonyms>=3.10
-tensor2tensor>=1.15
-tensorflow==1.14
 numpy
+tensor2tensor
+tensorflow==1.14
+flask
