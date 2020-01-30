@@ -33,7 +33,7 @@ env/models
 
 ### Process a local text file
 ```bash
-python python run_local_txt.py <model-path> <input-text>
+python run_local_txt.py <model-path> <input-text>
 ```
 
 ### Run in a web browser
