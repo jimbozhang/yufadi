@@ -36,9 +36,9 @@ env/models
 python run_local_txt.py <model-path> <input-text>
 ```
 
-### Run in a web browser
+### Run from a web browser
 Start the server:
 ```bash
-./start_server.sh <model-path>
+python start_server.py <model-path>
 ```
 Then access http://0.0.0.0:1052 in your web browser.
