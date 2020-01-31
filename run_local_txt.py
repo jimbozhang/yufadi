@@ -6,7 +6,7 @@ if len(sys.argv) < 3:
     print('Usage: python {} <model-path> <input-text>'.format(sys.argv[0]))
     sys.exit()
 
-import yufadi.wrapper as ygec
+import yufadi.engine as ygec
 
 model_path = sys.argv[1]
 input_fn = sys.argv[2]
