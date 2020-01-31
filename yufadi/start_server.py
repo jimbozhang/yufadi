@@ -41,4 +41,4 @@ def url_input(input_str):
 if __name__ == "__main__":
     model_path = sys.argv[1]
     gec_processor = ygec.Yufadi(model_path)
-    app.run(host="127.0.0.1", port=1052)
+    app.run(host="0.0.0.0", port=1052)
