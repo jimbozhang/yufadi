@@ -13,7 +13,7 @@ The training text is required to be saved as `env/dataset/train-set`. It's forma
 然 后 我 去 上 学 ， 在 七 点 一 刻 。	我 上 学 是 在 七 点 一 刻 。
 ```
 
-In this file, each line consists of a source sentence and a target sentence, which should be splited by a tab. 
+In this file, each line consists of a source sentence and a target sentence splited by a tab. 
 
 All the charactors should be converted to full-width and be splited by a space.
 
