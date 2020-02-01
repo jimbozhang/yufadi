@@ -38,7 +38,7 @@ class GecProblem(text_problems.Text2TextProblem):
 
         data_file = data_dir + '/train-set'
 
-        with open(data_file, "r", encoding="utf-8") as f:
+        with open(data_file, encoding='utf-8') as f:
             for line in f:
                 items = re.split(r'\t', line.strip('\n'))
                 if len(items) != 2:

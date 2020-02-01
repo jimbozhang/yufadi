@@ -12,7 +12,7 @@ model_path = sys.argv[1]
 input_fn = sys.argv[2]
 
 processor = ygec.Yufadi(model_path)
-with open(input_fn) as f:
+with open(input_fn, encoding='utf-8') as f:
     for line in f:
         result = processor(line)
         print('{} ---> {}'.format(line.strip('\n'), result))

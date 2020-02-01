@@ -9,7 +9,7 @@ class SentencePreprocess:
         self.unk_sym = '@'
         self.id_of_word = {}
         dict_fn = model + '/words.txt'
-        with open(dict_fn) as f:
+        with open(dict_fn, encoding='utf-8') as f:
             for line in f:
                 word, wid = re.split(r'\s+', line.strip('\n'))
                 self.id_of_word[word] = wid

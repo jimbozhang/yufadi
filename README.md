@@ -4,13 +4,31 @@ Yufadi is a Mandarin Grammar Error Correction (GEC) engine.
 
 ## Train
 
-See `yufadi/train/run.sh`.
+### Prepare the training text
 
+The training text is required to be saved as `env/dataset/train-set`. It's format should be like the following example:
+
+```plain
+从 １ ９ ７ １ 年 开 始 计 划 生 育 ， 这 个 制 度 。	从 １ ９ ７ １ 年 开 始 执 行 计 划 生 育 这 个 制 度 。
+然 后 我 去 上 学 ， 在 七 点 一 刻 。	我 上 学 是 在 七 点 一 刻 。
+```
+
+In this file, each line consists of a source sentence and a target sentence, which should be splited by a tab. 
+
+All the charactors should be converted to full-width and be splited by a space.
+
+Any charactors not in the vocabulary set (`resources/words.txt`) need to be replaced by the symbol "@".
+
+### Run training
+
+```bash
+./train.sh
+```
 
 ## Decode
 
-### The model directory
-The model directory should contain the t2t model,
+### Check the model
+Make sure the model directory contains the t2t model,
 the vocab file and the `words.txt` file which maps the words into indexes.
 
 An example:
