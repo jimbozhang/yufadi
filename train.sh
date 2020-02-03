@@ -35,7 +35,6 @@ if [ $stage -le 0 ]; then
     --data_dir=$DATA_DIR \
     --tmp_dir=$TMP_DIR \
     --problem=$PROBLEM
-  exit
 fi
 
 if [ $stage -le 1 ]; then
