@@ -1,7 +1,7 @@
 # Copyright 2020 Junbo Zhang. All Rights Reserved.
 
-import sys
 import codecs
+import sys
 
 if len(sys.argv) < 3:
     print('Usage: python {} <model-path> <input-text>'.format(sys.argv[0]))

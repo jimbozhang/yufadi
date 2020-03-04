@@ -1,11 +1,12 @@
 # Copyright 2020 Junbo Zhang. All Rights Reserved.
 
 import os
+
 import numpy as np
 import tensorflow as tf
 from tensor2tensor import problems
-from tensor2tensor.utils import trainer_lib
 from tensor2tensor.utils import registry
+from tensor2tensor.utils import trainer_lib
 from tensor2tensor import models
 
 

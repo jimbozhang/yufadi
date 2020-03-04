@@ -1,7 +1,7 @@
 # Copyright 2020 Junbo Zhang. All Rights Reserved.
 
-import sys
 import re
+import sys
 
 
 class SentencePreprocess:

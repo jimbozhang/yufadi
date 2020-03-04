@@ -1,8 +1,8 @@
 # Copyright 2020 Junbo Zhang. All Rights Reserved.
 
-import sys
 from flask import Flask, request, render_template, redirect
 from wtforms import Form, StringField, validators, widgets
+
 import yufadi.engine as ygec
 
 app = Flask(__name__)
@@ -16,7 +16,7 @@ class InputForm(Form):
             validators.DataRequired(message=' '),
             validators.Length(max=100, message=u'当前版本，句子暂时不要超过100个汉字。对于段落的纠错，可以拆成句子多次运行。'),
         ],
-        render_kw={'style':'font-size:12px;','class':'user'}
+        render_kw={'style': 'font-size:12px;', 'class': 'user'}
     )
 
 
