@@ -1,6 +1,6 @@
 # Yufadi
 
-Yufadi is a Mandarin Grammar Error Correction (GEC) engine. 
+`Yufadi` is a toy project for Mandarin Grammar Error Correction (GEC) task. 
 
 ## Train
 
